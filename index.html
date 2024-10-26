@@ -1,11 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello World</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #4CAF50;
+            color: white;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        .projects, .hobbies {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .project, .hobby {
+            margin: 10px;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .project a, .hobby a {
+            text-decoration: none;
+            color: #4CAF50;
+        }
+    </style>
 </head>
 <body>
-  <h1>Hello, World!</h1>
+
+<header>
+    <h1>Your Name</h1>
+    <p>Welcome to my personal landing page!</p>
+</header>
+
+<section id="introduction">
+    <h2>Introduction</h2>
+    <img src="your-introduction-image.jpg" alt="Introduction Image" style="width:300px;">
+    <p>Hi! I'm [Your Name], a [Your Profession/Field]. I enjoy [a few hobbies or interests].</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="project">
+            <a href="project-link-1.html">
+                <img src="project-image-1.jpg" alt="Project 1">
+                <p>Project 1 Description</p>
+            </a>
+        </div>
+        <div class="project">
+            <a href="project-link-2.html">
+                <img src="project-image-2.jpg" alt="Project 2">
+                <p>Project 2 Description</p>
+            </a>
+        </div>
+        <div class="project">
+            <a href="project-link-3.html">
+                <img src="project-image-3.jpg" alt="Project 3">
+                <p>Project 3 Description</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Professional Experience</h2>
+    <p>I have worked in [Your Field/Profession] for [X years]. Here are some of my experiences:</p>
+    <ul>
+        <li>Job Title 1 - Company 1 (Year - Year)</li>
+        <li>Job Title 2 - Company 2 (Year - Year)</li>
+        <li>Job Title 3 - Company 3 (Year - Year)</li>
+    </ul>
+</section>
+
+<section id="hobbies">
+    <h2>Hobbies</h2>
+    <div class="hobbies">
+        <div class="hobby">
+            <img src="hobby-image-1.jpg" alt="Hobby 1">
+            <p>Description of Hobby 1</p>
+        </div>
+        <div class="hobby">
+            <img src="hobby-image-2.jpg" alt="Hobby 2">
+            <p>Description of Hobby 2</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p style="text-align:center;">&copy; 2024 Your Name. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
