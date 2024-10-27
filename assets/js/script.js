@@ -36,10 +36,12 @@ $(document).ready(function(){
 
 
 window.addEventListener('load', () => {
-  if (window.location.hash) {
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual'; // Prevents automatic scroll restoration
+  }
     history.replaceState(null, null, ' '); // Clears the fragment from URL
     window.scrollTo(0, 0); // Scrolls to the top
-  }
+  
 });
 
 
@@ -72,3 +74,6 @@ document.addEventListener("DOMContentLoaded", function() {
       observer.observe(bar);
   });
 });
+
+
+
