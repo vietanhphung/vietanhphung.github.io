@@ -153,21 +153,14 @@ section{
 
 
 #greetingbtn {
-    width: fit-content;
-    padding: 5px 5px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 20%;         
-    background-color: var(--white);  
-    color: ver(--navy);               
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; 
-    text-transform: none;
-    font-size: 1.6rem;
-    color: var(--black);
-    line-height: 1.6;
-    padding-bottom: 1rem;
-    text-transform: none;
+    max-width: 60%;
+    padding: 5px;
+    background-color: var(--green);
+    border-radius: 15px;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--white);
 }
 
 #greetingbtn:hover{
@@ -396,6 +389,7 @@ header #menu-btn:hover{
     color: var(--black);
     line-height: 1.6;
     padding-bottom: 1rem;
+    padding-top: 15px;
     text-transform: none;
 }
 
