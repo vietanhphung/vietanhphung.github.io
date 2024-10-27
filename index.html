@@ -1,116 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Landing Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            text-align: center;
-            padding: 50px 0;
-            background-color: #4CAF50;
-            color: white;
-        }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #4CAF50;
-        }
-        .projects, .hobbies {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .project, .hobby {
-            margin: 10px;
-            text-align: center;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .project a, .hobby a {
-            text-decoration: none;
-            color: #4CAF50;
-        }
-    </style>
+
+    <!-- Title -->
+    <title>Viet Anh Phung </title>
+
+    <!-- Font-Awesome CSS -->
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/all.min.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/vendors/swiper/swiper.css" />
+
+    <!-- Magnific-Popup CSS -->
+    <link rel="stylesheet" href="assets/vendors/magnific-popup/magnific-popup.css" />
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet"  href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
 </head>
 <body>
 
-<header>
-    <h1>Your Name</h1>
-    <p>Welcome to my personal landing page!</p>
-</header>
 
-<section id="introduction">
-    <h2>Introduction</h2>
-    <img src="your-introduction-image.jpg" alt="Introduction Image" style="width:300px;">
-    <p>Hi! I'm [Your Name], a [Your Profession/Field]. I enjoy [a few hobbies or interests].</p>
-</section>
+    <!-------------------- Scroll-Top Area (Start) -------------------->
+    <a href="#home" class="scroll-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <!-------------------- Scroll-Top Area (End) -------------------->
 
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-        <div class="project">
-            <a href="project-link-1.html">
-                <img src="project-image-1.jpg" alt="Project 1">
-                <p>Project 1 Description</p>
-            </a>
-        </div>
-        <div class="project">
-            <a href="project-link-2.html">
-                <img src="project-image-2.jpg" alt="Project 2">
-                <p>Project 2 Description</p>
-            </a>
-        </div>
-        <div class="project">
-            <a href="project-link-3.html">
-                <img src="project-image-3.jpg" alt="Project 3">
-                <p>Project 3 Description</p>
-            </a>
-        </div>
-    </div>
-</section>
+        
 
-<section id="experience">
-    <h2>Professional Experience</h2>
-    <p>I have worked in [Your Field/Profession] for [X years]. Here are some of my experiences:</p>
-    <ul>
-        <li>Job Title 1 - Company 1 (Year - Year)</li>
-        <li>Job Title 2 - Company 2 (Year - Year)</li>
-        <li>Job Title 3 - Company 3 (Year - Year)</li>
-    </ul>
-</section>
+    <!-------------------- Header Area (Start) -------------------->
+    <header class="header">
 
-<section id="hobbies">
-    <h2>Hobbies</h2>
-    <div class="hobbies">
-        <div class="hobby">
-            <img src="hobby-image-1.jpg" alt="Hobby 1">
-            <p>Description of Hobby 1</p>
-        </div>
-        <div class="hobby">
-            <img src="hobby-image-2.jpg" alt="Hobby 2">
-            <p>Description of Hobby 2</p>
-        </div>
-    </div>
-</section>
+        <!-- Logo -->
+        <a class="logo" href="#home">
+            <!-- <img src="assets/images/logo.png" alt="logo" /> -->
+        </a>
+        <!-- Logo End -->
 
-<footer>
-    <p style="text-align:center;">&copy; 2024 Your Name. All rights reserved.</p>
-</footer>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <!-- Menubar -->
+        <div class="fas fa-bars" id="menu-btn"></div>
+        
+    </header>
+    <!-------------------- Header Area (End) -------------------->
+ 
+
+
+    <!-------------------- Home Area (Start) -------------------->
+    <section class="home" id="home">
+
+        <div class="box-container">
+
+            <div class="content">
+                <div class="text">
+                    <h2>hi, I'm Viet Anh </h1>
+                    <h1>I Am a <span class="typing-text"></span></h1>
+                    <p># I set up automated data pipelines and infrastructures <br># I code <br># I take pictures<br># I cook</p>
+                    
+                
+                    <a href="#about" class="btn">about me <i class="fas fa-user"></i></a>
+                </div>
+            </div>
+    
+            <div class="image">
+                <img src="assets/images/Home/Home-Image.jpg" alt="Home-Image">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-------------------- Home Area (End) -------------------->
+
+
+
+    <!-------------------- About Area (Start) -------------------->
+    <section class="about" id="about">
+
+        <div class="box-container">
+
+            <div class="image">
+                <img src="assets/images/About/About-Image.jpg" alt="About-Image" />
+            </div>
+    
+            <div class="content">
+
+                <h2 id="greeting">My name is Viet Anh Phung :)</h2>
+                <div>
+                    <button onclick="changeGreeting()" id="greetingbtn">Struggle pronouncing it?</button>
+                </div>
+                <p>I'm on a mission to use my technical skills to bring values to others. Let's create something together!<br> I also take street photos, passionate about psychology and cooking</p>
+                <script>
+                function changeGreeting() {
+                    document.getElementById("greeting").innerText = "It's alright, call me Connor ;)";
+                    document.getElementById("greetingbtn").style.display = "none";
+                }
+                </script>
+                
+   
+                <div class="about-info">
+
+                    <div class="info">
+                        <h4>Data Engineer: <span>100%</span></h4>
+                        <h4>Software Engineer: <span>definitely!</span></h4>
+                        <h4>Freelance Photographer: <span>yes!!!</span></h4>
+                        <a href="assets/resume.pdf" class="btn" download>Résumé <i class="fas fa-download"></i></a>
+                    </div>
+
+                    <div class="counting">
+
+                        <div class="box">
+                            <h1 class="count" data-count="3"></h1>
+                            <h3>technical projects</h3>
+                        </div>
+                        <div class="box">
+                            <h1 class="count"  data-count="5"></h1>
+                            <h3 id="managing"> years leader roles </h3>
+                        </div>
+                        <div class="box">
+                            <h1 class="count2" data-count="1"></h1>
+                            <h3>quick-learner</h3>
+                        </div>
+                                    
+                        <div class="box">
+                            <h1 class="count1"  data-count="10000"></h1>
+                            <h3 id ="therapy">unexpected psychotherapy sessions</h3>
+                        </div>
+                    
+                    </div>
+
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <div class="skill-container">
+
+            <div class="heading">
+                <h2>my <span>skills</span></h2>
+            </div>
+    
+            <div class="skills">
+                <div class="skill-item item1">
+                    <div class="box">
+                        <h3>Python, Pandas, Data Ingestion<span> 95% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>SQL databases<span> 90% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>AWS Cloud Infrastructures<span> 85% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                </div>
+    
+                <div class="skill-item item2">
+                    <div class="box">
+                        <h3>Terrafrom, Airflow, Docker<span> 75% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>ReactJS, JavaScripts<span> 65% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>Ability to learn quiclky<span> 100% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+
+    </section>
+    <!-------------------- About Area (End) -------------------->
+
+    
+
+    <!-------------------- Qualification Area (Start) 
+    <section class="qualification">
+
+        <div class="heading">
+            <h2>my <span>qualification</span></h2>
+        </div>
+
+        <div class="box-container">
+
+            <div class="education">
+
+                <div class="experience-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div class="content">
+                        <span>2015 - 2016</span>
+                        <h3>engineering</h3>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                            Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores 
+                            Ipsa? Error, Debitis Ullam.</p>
+                    </div>
+                </div>
+    
+                <div class="experience-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div class="content">
+                        <span>2016 - 2017</span>
+                        <h3>engineering</h3>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                            Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores 
+                            Ipsa? Error, Debitis Ullam.</p>
+                    </div>
+                </div>
+        
+                <div class="experience-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div class="content">
+                        <span>2017 - 2018</span>
+                        <h3>engineering</h3>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                            Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores 
+                            Ipsa? Error, Debitis Ullam.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="experience">
+
+                <div class="experience-item">
+                    <i class="fas fa-briefcase"></i>
+                    <div class="content">
+                        <span>2018 - 2019</span>
+                        <h3>front-end development</h3>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                            Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores 
+                            Ipsa? Error, Debitis Ullam.</p>
+                    </div>
+                </div>
+    
+                <div class="experience-item">
+                    <i class="fas fa-briefcase"></i>
+                    <div class="content">
+                        <span>2019 - 2020</span>
+                        <h3>front-end development</h3>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                            Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores 
+                            Ipsa? Error, Debitis Ullam.</p>
+                    </div>
+                </div>
+    
+                <div class="experience-item">
+                    <i class="fas fa-briefcase"></i>
+                    <div class="content">
+                        <span>2020 - 2021</span>
+                        <h3>front-end development</h3>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                            Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores 
+                            Ipsa? Error, Debitis Ullam.</p>
+                    </div>
+                </div>
+    
+            </div>
+
+        </div>
+    </section>
+
+    Qualification Area (End) -------------------->
+
+
+
+
+    <!-------------------- Portfolio Area (Start) -------------------->
+    <section class="portfolio" id="portfolio">
+
+        <div class="heading">
+            <h2>my <span>portfolio</span></h2>
+        </div>
+
+        <div class="gallery">
+            <ul class="controls">
+                <li class="button btn active" data-filter="project">Projects</li>
+                <li class="button btn" data-filter="photography">photography</li>
+            </ul>
+    
+            <div class="box-container">
+    
+                <div class="portfolio-item image project">
+                    <img src="assets/images/Portfolio/project3.mov" loading="lazy" alt="Portfolio-Image" />
+                    <div class="content">
+                        <h4>🎲 Project Caerus</h4>
+                        <p>End-to-End Full-Stack Interactive LMIA Distribution Map</p>
+                        <a  href="https://vcforests.com/map" target="_blank"><i class="fas fa-external-link-square-alt"></i></a>
+                    </div>
+                </div>
+    
+                <div class="portfolio-item image project">
+                    <img src="assets/images/Portfolio/project2.jpg" alt="Portfolio-Image" />
+                    <div class="content">
+                        <h4>🔱 Project Icarus</h4>
+                        <p>Automated Analytic Pipeline System for Air Crash Investigation on Cloud Service</p>
+                        <a  href="https://github.com/vietanhphung/lmiaMap" target="_blank" ><i class="fas fa-external-link-square-alt"></i></a>
+                    </div>
+                </div>
+    
+                <div class="portfolio-item image project">
+                    <img src="assets/images/Portfolio/project1.mov"  loading="lazy" alt="Portfolio-Image" />
+                    <div class="content">
+                        <h4>🌅 Project Sunrise</h4>
+                        <p>Fully Responsive Front End Restaurant Website</p>
+                        <a data-effect="mfp-newspaper" href="https://youtu.be/5hDdOF6Edtk" target="_blank"><i class="fas fa-external-link-square-alt"></i></i></a>
+                    </div>
+                </div>
+                </div>
+                <div class="box-container">
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo1.jpg" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo2.jpg" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo4.jpg" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo5.jpg" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo6.jpg" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo7.jpg" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo9.jpg" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo10.jpg" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo11.png" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo12.png" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo13.jpg" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo3.png" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                </div>
+                
+    
+            </div>
+    
+        </div>
+        
+    </section>
+    <!-------------------- Portfolio Area (End) -------------------->
+
+
+
+
+
+
+
+
+    
+    <!-------------------- Footer Area (Start) -------------------->
+    <section class="contact" id="contact">
+    <footer >
+        <div class="social">
+            <a href="mailto:anh.phung@torontomu.ca?subject=Howdy, Viet Anh&body=I%20hope%20this%20email%20finds%20you%20well!%20You%20are%20awesome,%20let's%20connect!" class="fas fa-envelope"></a>
+            <a href="https://github.com/vietanhphung" class="fab fa-github"></a>
+            <a href="https://www.linkedin.com/in/connorphung/" class="fab fa-linkedin-in"></a>
+            <a href="https://www.instagram.com/connorsdailypic/" class="fab fa-instagram"></a>
+        </div>
+
+        <div class="content">
+            <p>created by AS_Designs | redesigned by Viet Anh Phung | all rights reserved</p>
+        </div>
+    </footer>
+    </section>
+    <!-------------------- Footer Area (End) -------------------->
+
+
+
+    <!-- JQuery -->
+    <script src="assets/vendors/jquery/jquery-3.6.0.js"></script>
+
+    <!-- SWIPER JS -->
+    <script src="assets/vendors/swiper/swiper.js"></script>
+
+    <!-- Magnific-Popup JS -->
+    <script src="assets/vendors/magnific-popup/jquery.magnific-popup.js"></script>
+
+    <!-- Typed JS -->
+    <script src="assets/vendors/typed/typed.js"></script>
+
+    <!-- Custom Script File -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/scroll-spy.js"></script>
+    <script src="assets/js/counter-up.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+    <script src="assets/js/testi-slider.js"></script>
+    <script src="assets/js/blog-slider.js"></script>
+
+    <!---------------- Custom Script ---------------->
+
+    <!-- Typed Script -->
+    <script>
+        var typed = new Typed('.typing-text', {
+
+            strings: ['Data Engineer', 'Software Engineer', 'Photographer', 'Food Lover'],
+            typeSpeed: 200,
+            loop: true
+        });
+    </script>
+
+
+
 
 </body>
 </html>
