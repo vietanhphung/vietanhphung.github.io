@@ -276,14 +276,26 @@ header #menu-btn:hover{
     gap: 4rem;
 }
 
-.home .image{
-    text-align: center ;
-    -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
-          transform: translateY(-5%);
-
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-5%);
+    }
 }
+
+.home .image {
+    text-align: center;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
+    flex: 1 1 40rem;
+    opacity: 0; /* Start invisible */
+    animation: slideIn 1s ease forwards; /* Trigger the slideIn animation */
+}
+
 
 .home .image img{
     height: 60rem;
@@ -533,10 +545,12 @@ header #menu-btn:hover{
     border-radius: 50rem;
 }
 
- .skill-item .box .progress-bar span{
-    display:block;
-    height:100%;
+.skill-item .box .progress-bar span {
+    display: block;
+    height: 100%;
     background: var(--green);
+    width: 0; /* Start width at 0 for animation */
+    transition: width 2s ease-in-out; /* Smooth animation */
 }
 
  .skill-item.item1 .box:nth-child(1) .progress-bar span{

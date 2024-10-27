@@ -33,3 +33,36 @@ $(document).ready(function(){
 
 });
 
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const progressBars = document.querySelectorAll(".skill-item .progress-bar span");
+
+  const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              const span = entry.target;
+              const width = span.getAttribute("data-width");
+
+              // Set the width to trigger animation
+              span.style.width = width;
+              
+              observer.unobserve(span); // Stop observing once animated
+          }
+      });
+  }, { threshold: 0.5 });
+
+  // Set data-width attributes for each skill bar
+  progressBars.forEach(bar => {
+      bar.setAttribute("data-width", bar.style.width); // Set data-width to predefined width
+      bar.style.width = "0"; // Reset initial width to 0
+      observer.observe(bar);
+  });
+});
