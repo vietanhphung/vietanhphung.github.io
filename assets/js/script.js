@@ -35,6 +35,12 @@ $(document).ready(function(){
 
 
 
+window.addEventListener('load', () => {
+  if (window.location.hash) {
+    history.replaceState(null, null, ' '); // Clears the fragment from URL
+    window.scrollTo(0, 0); // Scrolls to the top
+  }
+});
 
 
 

@@ -223,11 +223,9 @@ header .navbar a{
 
 
 header .navbar a:hover {color: var(--green)}
-/*
-header .navbar a.active{
-    color: var(--green);
-}
-    */
+
+
+    
 
 header #menu-btn{
     font-size: 3rem;
@@ -415,6 +413,8 @@ header #menu-btn:hover{
     flex-wrap: wrap;
     gap: 1rem;
 }
+
+
 
 .about .content .about-info .info{
     -webkit-box-flex: 1;
@@ -894,7 +894,7 @@ footer .social .fab, footer .social .fas{
     margin: 0 0.5rem;
 }
 
-footer .social .fab:hover{
+footer .social .fab:hover, footer .social .fas:hover{
     color: #353535;
     background-color: var(--white);
 }
