@@ -46,8 +46,8 @@
         <!-- Navbar -->
         <nav class="navbar">
             <a href="#home">home</a>
-            <a href="#about">about</a>
             <a href="#portfolio">portfolio</a>
+            <a href="#about">about</a>
             <a href="#contact">contact</a>
         </nav>
 
@@ -66,12 +66,10 @@
 
             <div class="content">
                 <div class="text">
-                    <h2>hi, I'm Viet Anh </h1>
-                    <h1>I Am a <span class="typing-text"></span></h1>
-                    <p># I set up automated data pipelines and infrastructures <br># I code <br># I take pictures<br># I cook</p>
-                    
-                
-                    <a href="#about" class="btn">about me <i class="fas fa-user"></i></a>
+                    <h1>Data Engineer | Software Engineer | Photographer </h1>
+                    <p ><span class="typing-text"></span></p>
+                    <br><br>
+                    <a href="#portfolio" class="btn" id="homebtn">Check My Portfolio</a>
                 </div>
             </div>
     
@@ -87,8 +85,109 @@
 
 
 
+
+
+    <!-------------------- Portfolio Area (Start) -------------------->
+    <section class="portfolio" id="portfolio">
+
+        <div class="heading">
+            <h2>my <span>portfolio</span></h2>
+        </div>
+
+        <div class="gallery">
+            <ul class="controls">
+                <li class="button btn active" data-filter="project">Technical</li>
+                <li class="button btn" data-filter="photography">photography</li>
+            </ul>
+    
+            <div class="box-container">
+    
+                <div class="portfolio-item image project">
+                    <img src="assets/images/Portfolio/project3.mov" loading="lazy" alt="Portfolio-Image" />
+                    <div class="content">
+                        <h4>🎲 Project Caerus</h4>
+                        <p>End-to-End Full-Stack Interactive LMIA Distribution Map</p>
+                        <a href="https://github.com/vietanhphung/lmiaMap" target="_blank">Read me <i class="far fa-file-alt"></i></a>
+                        <a  href="https://vcforests.com/map" target="_blank">Live demo <i class="fas fa-external-link-square-alt"></i></a>
+                    </div>
+                </div>
+    
+                <div class="portfolio-item image project">
+                    <img src="assets/images/Portfolio/project2.jpg" alt="Portfolio-Image" />
+                    <div class="content">
+                        <h4>🔱 Project Icarus</h4>
+                        <p>Automated Analytic Pipeline System for Air Crash Investigation on Cloud Service</p>
+                        <a  href="https://github.com/vietanhphung/E2E-AirCrashInvestigation" target="_blank" >Read me <i class="far fa-file-alt"></i></a>
+                    </div>
+                </div>
+    
+                <div class="portfolio-item image project">
+                    <img src="assets/images/Portfolio/project1.mov"  loading="lazy" alt="Portfolio-Image" />
+                    <div class="content">
+                        <h4>🌅 Project Sunrise</h4>
+                        <p>Fully Responsive Front End Restaurant Website</p>
+                        <a  href="https://youtu.be/5hDdOF6Edtk" target="_blank" >Video Demo (live comming soon) <i class="far fa-file-alt"></i></a>
+                    </div>
+                </div>
+                </div>
+                <div class="box-container">
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo1.jpg" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo2.jpg" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo4.jpg" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo5.jpg" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo6.jpg" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo7.jpg" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo9.jpg" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo10.jpg" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo11.png" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo12.png" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo13.jpg" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                    <div class="portfolio-item image photography">
+                        <img class="photography" src="assets/images/Portfolio/photography/photo3.png" loading="lazy" alt="Portfolio-Image" />
+                    </div>
+                </div>
+                
+    
+            </div>
+    
+        </div>
+        
+    </section>
+    <!-------------------- Portfolio Area (End) -------------------->
+
+
+
+
+
+
+
     <!-------------------- About Area (Start) -------------------->
     <section class="about" id="about">
+        <div class="heading">
+            <h2>More <span>about</span> Me</h2>
+        </div>
 
         <div class="box-container">
 
@@ -129,7 +228,7 @@
                         </div>
                         <div class="box">
                             <h1 class="count"  data-count="5"></h1>
-                            <h3 id="managing"> years leader roles </h3>
+                            <h3 id="managing"> years leadership roles </h3>
                         </div>
                         <div class="box">
                             <h1 class="count2" data-count="1"></h1>
@@ -286,98 +385,6 @@
 
 
 
-    <!-------------------- Portfolio Area (Start) -------------------->
-    <section class="portfolio" id="portfolio">
-
-        <div class="heading">
-            <h2>my <span>portfolio</span></h2>
-        </div>
-
-        <div class="gallery">
-            <ul class="controls">
-                <li class="button btn active" data-filter="project">Projects</li>
-                <li class="button btn" data-filter="photography">photography</li>
-            </ul>
-    
-            <div class="box-container">
-    
-                <div class="portfolio-item image project">
-                    <img src="assets/images/Portfolio/project3.mov" loading="lazy" alt="Portfolio-Image" />
-                    <div class="content">
-                        <h4>🎲 Project Caerus</h4>
-                        <p>End-to-End Full-Stack Interactive LMIA Distribution Map</p>
-                        <a  href="https://vcforests.com/map" target="_blank"><i class="fas fa-external-link-square-alt"></i></a>
-                    </div>
-                </div>
-    
-                <div class="portfolio-item image project">
-                    <img src="assets/images/Portfolio/project2.jpg" alt="Portfolio-Image" />
-                    <div class="content">
-                        <h4>🔱 Project Icarus</h4>
-                        <p>Automated Analytic Pipeline System for Air Crash Investigation on Cloud Service</p>
-                        <a  href="https://github.com/vietanhphung/lmiaMap" target="_blank" ><i class="fas fa-external-link-square-alt"></i></a>
-                    </div>
-                </div>
-    
-                <div class="portfolio-item image project">
-                    <img src="assets/images/Portfolio/project1.mov"  loading="lazy" alt="Portfolio-Image" />
-                    <div class="content">
-                        <h4>🌅 Project Sunrise</h4>
-                        <p>Fully Responsive Front End Restaurant Website</p>
-                        <a data-effect="mfp-newspaper" href="https://youtu.be/5hDdOF6Edtk" target="_blank"><i class="fas fa-external-link-square-alt"></i></i></a>
-                    </div>
-                </div>
-                </div>
-                <div class="box-container">
-                    <div class="portfolio-item image photography">
-                        <img class="photography" src="assets/images/Portfolio/photography/photo1.jpg" loading="lazy" alt="Portfolio-Image" />
-                    </div>
-                    <div class="portfolio-item image photography">
-                        <img class="photography" src="assets/images/Portfolio/photography/photo2.jpg" loading="lazy" alt="Portfolio-Image" />
-                    </div>
-                    <div class="portfolio-item image photography">
-                        <img class="photography" src="assets/images/Portfolio/photography/photo4.jpg" loading="lazy" alt="Portfolio-Image" />
-                    </div>
-                    <div class="portfolio-item image photography">
-                        <img class="photography" src="assets/images/Portfolio/photography/photo5.jpg" loading="lazy" alt="Portfolio-Image" />
-                    </div>
-                    <div class="portfolio-item image photography">
-                        <img class="photography" src="assets/images/Portfolio/photography/photo6.jpg" loading="lazy" alt="Portfolio-Image" />
-                    </div>
-                    <div class="portfolio-item image photography">
-                        <img class="photography" src="assets/images/Portfolio/photography/photo7.jpg" loading="lazy" alt="Portfolio-Image" />
-                    </div>
-                    <div class="portfolio-item image photography">
-                        <img class="photography" src="assets/images/Portfolio/photography/photo9.jpg" loading="lazy" alt="Portfolio-Image" />
-                    </div>
-                    <div class="portfolio-item image photography">
-                        <img class="photography" src="assets/images/Portfolio/photography/photo10.jpg" loading="lazy" alt="Portfolio-Image" />
-                    </div>
-                    <div class="portfolio-item image photography">
-                        <img class="photography" src="assets/images/Portfolio/photography/photo11.png" loading="lazy" alt="Portfolio-Image" />
-                    </div>
-                    <div class="portfolio-item image photography">
-                        <img class="photography" src="assets/images/Portfolio/photography/photo12.png" loading="lazy" alt="Portfolio-Image" />
-                    </div>
-                    <div class="portfolio-item image photography">
-                        <img class="photography" src="assets/images/Portfolio/photography/photo13.jpg" loading="lazy" alt="Portfolio-Image" />
-                    </div>
-                    <div class="portfolio-item image photography">
-                        <img class="photography" src="assets/images/Portfolio/photography/photo3.png" loading="lazy" alt="Portfolio-Image" />
-                    </div>
-                </div>
-                
-    
-            </div>
-    
-        </div>
-        
-    </section>
-    <!-------------------- Portfolio Area (End) -------------------->
-
-
-
-
 
 
 
@@ -427,11 +434,8 @@
     <!-- Typed Script -->
     <script>
         var typed = new Typed('.typing-text', {
-
-            strings: ['Data Engineer', 'Software Engineer', 'Photographer', 'Food Lover'],
-            typeSpeed: 200,
-            loop: true
-        });
+            strings: ['<br># Welcome to my portfolio <br># I set up automated data pipelines and infrastructures<br># I code<br># I take pictures'],
+            typeSpeed: 1});
     </script>
 
 

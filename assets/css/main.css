@@ -94,6 +94,9 @@ section{
     background: var(--navy);
 }
 
+
+
+
 /*--------------------- 0- Global CSS (End) ---------------------*/
 
 
@@ -222,7 +225,7 @@ header .navbar a:hover {color: var(--green)}
 
 header #menu-btn{
     font-size: 3rem;
-    color: var(--white);
+    color: var(--navy);
     cursor: pointer;
     -webkit-transition: all 0.5s linear;
        -moz-transition: all 0.5s linear;
@@ -232,12 +235,12 @@ header #menu-btn{
 }
 
 header .fa-times{
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
 }
 
 header #menu-btn:hover{
-    color: var(--white);
+    color: var(--green);
 }
 
 /*--------------------- 3- Header Area CSS (End) ---------------------*/
@@ -261,10 +264,12 @@ header #menu-btn:hover{
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: flex-start;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 4rem;
+    padding-top: 20rem;
+    margin-bottom: 5%;
 }
 
 @keyframes slideIn {
@@ -311,9 +316,8 @@ header #menu-btn:hover{
 
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: flex-start ;
     padding-top: 10rem;
-    transform: translateY(-5%);
     
 }
 
@@ -324,10 +328,11 @@ header #menu-btn:hover{
 }
 
 .home .content h1{
-    font-size: 4rem;
-    color: var(--green);
+    font-size: 3.5rem;
+    color: var(--navy);
     padding: 1rem 0;
     text-transform: none;
+    text-align: center;
 }
 
 .home .content h1 span{
@@ -336,12 +341,23 @@ header #menu-btn:hover{
 }
 
 .home .content p{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    color: var(--black);
-    padding-bottom: 2rem;
+    color: var(--green);
     line-height: 1.5;
-    text-transform: lowercase;
+    padding-left:15%;
+    text-align: left;
+}
+
+.home .content span{
+    text-transform: none;
+}
+
+.home .content #homebtn{
+    position: relative;    /* Position at the bottom */
+    left: 25%;        /* Center horizontally */
+    transform: translateX(-50%); /* Center align */
+    margin-bottom: 20px; /* Optional: adds some space from bottom */     
 }
 /*--------------------- 4- Home Area CSS (End) ---------------------*/
 
@@ -666,6 +682,7 @@ header #menu-btn:hover{
     flex-wrap: wrap;
     list-style-type: none;
     margin-top: 2rem;
+    
 }
 
 .controls .button{
@@ -685,6 +702,8 @@ header #menu-btn:hover{
     grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
     gap: 0.5rem;
     padding: 2rem 0; 
+    height: 100%;
+    
 }
 
 .portfolio-item{
@@ -769,6 +788,7 @@ header #menu-btn:hover{
        -moz-transition: all 0.4s linear;
          -o-transition: all 0.4s linear;
             transition: all 0.4s linear;
+            margin-bottom: 5px;
 }
 
 
@@ -790,9 +810,9 @@ header #menu-btn:hover{
 }
 
 .portfolio-item .content a{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--white);
-    padding-top: 20px;
+    padding-top: 5px;
     
 }
 
