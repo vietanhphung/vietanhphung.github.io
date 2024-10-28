@@ -355,7 +355,7 @@ header #menu-btn:hover{
 
 .home .content #homebtn{
     position: relative;    /* Position at the bottom */
-    left: 25%;        /* Center horizontally */
+    left: 26%;        /* Center horizontally */
     transform: translateX(-50%); /* Center align */
     margin-bottom: 20px; /* Optional: adds some space from bottom */     
 }
@@ -808,6 +808,8 @@ header #menu-btn:hover{
             transform: translateY(0);
     opacity: 1;
 }
+
+
 
 .portfolio-item .content a{
     font-size: 1.5rem;
