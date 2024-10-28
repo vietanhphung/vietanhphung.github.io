@@ -5,6 +5,7 @@ $(document).ready(function() {
 
     // Set default filter to "Projects"
     $galleryImages.hide(); // Hide all items initially
+    $galleryText.hide(); // Hide all items initially
     $(".gallery .project").show(); // Show only "Projects" items
 
     // Filter functionality on button click
