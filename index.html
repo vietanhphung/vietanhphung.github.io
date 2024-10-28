@@ -99,7 +99,11 @@
             <p class="gallery project" id="text">click on image to see more</p>
             <div class="box-container">  
                 <div class="portfolio-item image project">
-                    <img src="assets/images/Portfolio/project3.mp4" loading="lazy" alt="Portfolio-Image" />
+                    <video autoplay loop muted class="vid">
+                        <source src="assets/images/Portfolio/project3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    
                     <div class="content">
                         <h4>🎲 Project Caerus</h4>
                         <p>End-to-End Full-Stack Interactive LMIA Distribution Map</p>
@@ -118,7 +122,10 @@
                 </div>
     
                 <div class="portfolio-item image project">
-                    <img src="assets/images/Portfolio/project1.mp4"  loading="lazy" alt="Portfolio-Image" />
+                    <video autoplay loop muted class="vid">
+                        <source src="assets/images/Portfolio/project1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                     <div class="content">
                         <h4>🌅 Project Sunrise</h4>
                         <p>Fully Responsive Front End Restaurant Website</p>
@@ -436,6 +443,10 @@
             strings: ['<br># Welcome to my portfolio <br># I set up automated data pipelines and infrastructures<br># I code<br># I take pictures&nbsp;'],
             typeSpeed: 1, showCursor: false
         });
+    </script>
+
+    <script>
+        document.getElementsByClassName('vid').play();
     </script>
 
 
