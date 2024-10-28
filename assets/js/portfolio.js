@@ -1,6 +1,6 @@
 $(document).ready(function() {
     const $galleryImages = $(".gallery .image");
-    const $galleryText = $(".gallery p")
+    const $galleryText = $(".gallery #text")
     const $activeButtonClass = "active";
 
     // Set default filter to "Projects"

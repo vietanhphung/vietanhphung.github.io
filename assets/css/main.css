@@ -254,6 +254,51 @@ header #menu-btn:hover{
     min-height: 100vh;
 }
 
+.home #homecontact{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;    /* Position at the bottom */
+    left: 50%;        /* Center horizontally */
+    transform: translateX(-50%); /* Center align */
+    margin-bottom: 20px; /* Optional: adds some space from bottom */    
+    align-items: center;
+}
+
+.home .social{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: flex-start;
+    padding-bottom: 15px;
+}
+
+.home .social .fab, .home .social .fas{
+    background-color: #353535;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    color: var(--white);
+    font-size: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+
+.home .social .fab:hover, .home .social .fas:hover{
+    color: #353535;
+    background-color: var(--white);
+}
+
 .home .box-container{
     min-height: 100vh;
     display: -webkit-box;
@@ -355,10 +400,8 @@ header #menu-btn:hover{
 }
 
 .home .content #homebtn{
-    position: relative;    /* Position at the bottom */
-    left: 26%;        /* Center horizontally */
-    transform: translateX(-50%); /* Center align */
-    margin-bottom: 20px; /* Optional: adds some space from bottom */     
+     
+    width: fit-content;
 }
 /*--------------------- 4- Home Area CSS (End) ---------------------*/
 
