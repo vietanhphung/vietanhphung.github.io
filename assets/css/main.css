@@ -141,6 +141,7 @@ section{
     color: var(--navy);
     background-color: transparent;
     border: 0.2rem solid var(--navy);
+    border-radius: 5px;
 }
 
 .btn i{
@@ -156,11 +157,11 @@ section{
 
 #greetingbtn {
     max-width: 60%;
-    padding: 5px;
+    padding:  5px 8px 5px 8px;
     background-color: var(--green);
     border-radius: 15px;
     position: relative;
-    font-size: 16px;
+    font-size: 1.3rem;
     line-height: 1.4;
     color: var(--white);
 }
@@ -255,7 +256,7 @@ header #menu-btn:hover{
 }
 
 .home #homecontact{
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     position: relative;    /* Position at the bottom */
@@ -276,11 +277,13 @@ header #menu-btn:hover{
 }
 
 .home .social .fab, .home .social .fas{
-    background-color: #353535;
+    background-color: var(--white);
     border-radius: 50%;
-    height: 4rem;
-    width: 4rem;
-    color: var(--white);
+    border: 2px var(--navy) solid;
+    border-color: var(--navy);
+    height: 3.5rem;
+    width: 3.5rem;
+    color: var(--navy);
     font-size: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -291,12 +294,13 @@ header #menu-btn:hover{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    justify-content: center;
     margin: 0 0.5rem;
 }
 
 .home .social .fab:hover, .home .social .fas:hover{
-    color: #353535;
-    background-color: var(--white);
+    color: var(--white);
+    background-color: var(--navy);
 }
 
 .home .box-container{
@@ -361,8 +365,8 @@ header #menu-btn:hover{
 
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: flex-start ;
-    padding-top: 10%;
+    align-items: center ;
+    padding-top: 8%;
     
 }
 
@@ -370,6 +374,7 @@ header #menu-btn:hover{
     font-size: 2.5rem;
     font-weight: 400;
     color: var(--navy);
+    text-align: center;
 }
 
 .home .content h1{
@@ -400,8 +405,9 @@ header #menu-btn:hover{
 }
 
 .home .content #homebtn{
-     
     width: fit-content;
+    margin-bottom: 15px;
+    border-radius: 40px;
 }
 /*--------------------- 4- Home Area CSS (End) ---------------------*/
 
@@ -511,12 +517,18 @@ header #menu-btn:hover{
     gap: 1rem;
 }
 
+.counting{
+    border: 5px solid var(--green);
+    border-radius: 5px;
+}
+
+
 .counting .box{
     -webkit-box-flex: 1;
     -ms-flex: 1 1 18rem;
         flex: 1 1 18rem;
     text-align: center;
-    background-color: #222;
+    background-color: var(--white);
     padding: 2rem;
 }
 
@@ -737,6 +749,7 @@ header #menu-btn:hover{
 .controls .button{
     cursor: pointer;
     margin: 0.5rem;
+    border-radius: 5px;
 }
 
 .controls .button.active{
@@ -793,10 +806,10 @@ header #menu-btn:hover{
 .portfolio-item .content{
     content: '';
     position: absolute;
-    top: 10%;
-    left: 10%;
-    height: 80%;
-    width: 80%;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
     border-radius: 0.5rem;
     background-color: rgba(0, 0, 0, 0.8);
     display: -webkit-box;
@@ -814,6 +827,7 @@ header #menu-btn:hover{
             flex-direction: column;
     -webkit-transform: scale(0);
             transform: scale(0);
+    padding:5px;
 }
 
 
@@ -865,7 +879,6 @@ header #menu-btn:hover{
             transform: translateY(0);
     opacity: 1;
 }
-
 
 
 .portfolio-item .content a{
@@ -955,6 +968,7 @@ footer .social .fab, footer .social .fas{
     width: 4rem;
     color: var(--white);
     font-size: 2rem;
+    text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -965,6 +979,7 @@ footer .social .fab, footer .social .fas{
     -ms-flex-align: center;
     align-items: center;
     margin: 0 0.5rem;
+    justify-content: center;
 }
 
 footer .social .fab:hover, footer .social .fas:hover{

@@ -14,7 +14,7 @@ $(document).ready(function() {
                               $this.text(Math.floor(this.countNum));
                           },
                           complete: function() {
-                              $this.text('countless');
+                              $this.text('Countless');
                           }
                       }
                   );
