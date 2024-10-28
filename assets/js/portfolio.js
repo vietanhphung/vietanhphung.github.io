@@ -1,5 +1,6 @@
 $(document).ready(function() {
     const $galleryImages = $(".gallery .image");
+    const $galleryText = $(".gallery p")
     const $activeButtonClass = "active";
 
     // Set default filter to "Projects"
@@ -16,5 +17,6 @@ $(document).ready(function() {
 
         // Show and hide images based on the filter
         $galleryImages.hide().filter("." + filter).show(); // Hide all, then show filtered
+        $galleryText.hide().filter("." + filter).show();
     });
 });
