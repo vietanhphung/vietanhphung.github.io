@@ -92,6 +92,7 @@ section {
 /* Center pagination bullets on mobile devices */
 @media (max-width: 768px) {
     .swiper-pagination {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
