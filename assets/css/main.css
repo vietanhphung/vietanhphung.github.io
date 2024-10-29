@@ -785,6 +785,8 @@ header #menu-btn:hover{
     padding-top: 10px;
 }
 
+
+
 .portfolio-item{
     border-radius: 0.5rem;
     height: 25rem;
@@ -814,29 +816,33 @@ header #menu-btn:hover{
 
 .portfolio-item .content {
     position: fixed;
-    top: 30%;
-    left: 15%;
-    height: 40%;
-    width: 70%;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
     background-color: var(--navy);
     display: flex;
     justify-content: center;
     align-items: center;
     transform: scale(0); 
-    transition: transform 0.3s ease-out;
-    border-radius: 20px;
-    z-index: 2;
+    z-index: 998;
     flex-direction: column;
     padding: 2rem;
-    opacity: 0; 
+    padding: 10%;
 }
 
-
-
-.portfolio-item:hover .content{
-    -webkit-transform: scale(1);
-            transform: scale(1);
-            opacity: 1;
+#hidebtn {
+    position: fixed;
+    top: 5%; 
+    right: 5%;
+    padding: 10px 20px;
+    background-color: var(--navy);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999;
+    transform: scale(0);
 }
 
 .portfolio-item .content.active {
@@ -868,26 +874,11 @@ header #menu-btn:hover{
     font-size: 2rem;
     font-weight: bold;
     color: var(--white);
-    transform-origin: top;
-    -webkit-transform: translateY(-10rem);
-            transform: translateY(-10rem);
-    opacity: 0;
-    padding-bottom: 1rem;
-    -webkit-transition: all 0.4s linear;
-       -moz-transition: all 0.4s linear;
-         -o-transition: all 0.4s linear;
-            transition: all 0.4s linear;
 }
 
 .portfolio-item .content ul {
     list-style-type: disc; /* Use disc bullets */
     padding-left: 20px; /* Indentation for the list */
-    -webkit-transform: translateY(-10rem);
-    transform: translateY(-10rem);
--webkit-transition: all 0.4s linear;
--moz-transition: all 0.4s linear;
- -o-transition: all 0.4s linear;
-    transition: all 0.4s linear;
     margin-bottom: 20px;
 }
 
@@ -904,24 +895,12 @@ header #menu-btn:hover{
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--white);
-    transform-origin: top;
-    -webkit-transform: translateY(-10rem);
-            transform: translateY(-10rem);
-    -webkit-transition: all 0.4s linear;
-       -moz-transition: all 0.4s linear;
-         -o-transition: all 0.4s linear;
-            transition: all 0.4s linear;
     margin-bottom: 5px;
     line-height: 2rem;
 }
 
 
 
-.portfolio-item:hover .content p, .portfolio-item:hover .content ul, .portfolio-item:hover .content h4, .portfolio-item .content a{
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-}
 
 
 .portfolio-item .content a{
@@ -937,7 +916,7 @@ header #menu-btn:hover{
     opacity: 1;
 }
 
-.portfolio-item:hover img{
+.portfolio-item:hover img, .portfolio-item:hover video{
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
 }
@@ -1060,7 +1039,7 @@ footer .content p span{
     -moz-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;
-    z-index: 999;
+    z-index: 995;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

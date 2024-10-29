@@ -97,34 +97,31 @@
             </ul>
             
             <p class="gallery project" id="text">click on image to see more</p>
-
-  
+            <button id="hidebtn" onclick="hideContent()"><i class="fas fa-times" style="color: white; font-size: 3rem;"></i></button>
 
             <div class="box-container">  
-                <div class="portfolio-item image project" >
-                    <video controls="false" autoplay loop muted class="vid">
-                        <source src="assets/images/Portfolio/project3.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                <div class="portfolio-item image project" onclick="showContent()" style="cursor: pointer;">
                     
-                    <div class="content" id="popupContent" >
-                        <h4>🎲 Project Caerus</h4>
-                        <p>End-to-end Interactive LMIA Distribution Map</p>
-                        <ul>
-                            <li>Collect data from canada.ca Rest API, handled, transformed, formatted, and uploaded to MySQL remote server, followed Agile methodologies, closely monitored by a mentor.</li>
-                            <li>Used collected data to transform and update geographical coordinate data with Google Maps API to create an interactive map of Canada featuring the distribution trends of LMIA results.</li>
-                            <li>Implemented filter features to improve data analysis and simplified Bash commands using Make.</li>
-                            <li>Set up a reverse proxy as a security feature to hide the IP address of the backend server.</li>
-                            <li>Skills and Technologies: Python, MySQL, SSH, Docker, Plotly, Pandas, Ubuntu, Linux Server, Nginx, Flask.</li>
-                        </ul>
-                        
-                        <a href="https://github.com/vietanhphung/lmiaMap" target="_blank">Github <i class="fas fa-external-link-square-alt"></i></a>
-                        <a  href="https://vcforests.com/map" target="_blank">Live demo <i class="fas fa-external-link-square-alt"></i></a>
-                    </div>
-                    
+                    <img src="assets/images/Portfolio/project3.gif" alt="Portfolio-Image" />
+                   
+                        <div class="content" id="popupContent" >
+                            <h4>🎲 Project Caerus</h4>
+                            <p>End-to-end Interactive LMIA Distribution Map</p>
+                            <ul>
+                                <li>Collect data from canada.ca Rest API, handled, transformed, formatted, and uploaded to MySQL remote server, followed Agile methodologies, closely monitored by a mentor.</li>
+                                <li>Used collected data to transform and update geographical coordinate data with Google Maps API to create an interactive map of Canada featuring the distribution trends of LMIA results.</li>
+                                <li>Implemented filter features to improve data analysis and simplified Bash commands using Make.</li>
+                                <li>Set up a reverse proxy as a security feature to hide the IP address of the backend server.</li>
+                                <li>Skills and Technologies: Python, MySQL, SSH, Docker, Plotly, Pandas, Ubuntu, Linux Server, Nginx, Flask.</li>
+                            </ul>
+                            
+                            <a href="https://github.com/vietanhphung/lmiaMap" target="_blank">Github <i class="fas fa-external-link-square-alt"></i></a>
+                            <a  href="https://vcforests.com/map" target="_blank">Live demo <i class="fas fa-external-link-square-alt"></i></a>
+                        </div>
                 </div>
+              
     
-                <div class="portfolio-item image project">
+                <div class="portfolio-item image project" onclick="showContent()" style="cursor: pointer;">
                     <img src="assets/images/Portfolio/project2.jpg" alt="Portfolio-Image" />
                     <div class="content">
                         <h4>🔱 Project Icarus</h4>
@@ -139,11 +136,8 @@
                     </div>
                 </div>
     
-                <div class="portfolio-item image project">
-                    <video controls="false" autoplay loop muted class="vid">
-                        <source src="assets/images/Portfolio/project1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                <div class="portfolio-item image project" onclick="showContent()" style="cursor: pointer;">
+                    <img src="assets/images/Portfolio/project1.gif" alt="Portfolio-Image" />
                     <div class="content">
                         <h4>🌅 Project Sunrise</h4>
                         <p>Fully Responsive Front End Restaurant Website</p>
@@ -155,12 +149,11 @@
                         <a  href="https://github.com/vietanhphung/PhoRandDongRestaurant-Web" target="_blank" >Github <i class="fas fa-external-link-square-alt"></i></a>
                         <a  href="https://youtu.be/5hDdOF6Edtk" target="_blank" >Video Demo (live comming soon) <i class="fas fa-external-link-square-alt"></i></a>
                     </div>
-                    
                 </div>
-                
+            </div>
 
 
-                </div>
+             
                 <p class="project" id="text">I write posts about project progress and technical issues on <a href="https://www.linkedin.com/in/connorphung/" target="_blank" style="font-weight: bold; color: black;">LinkedIn <i class="fas fa-external-link-square-alt"></i></a></p>
             
                 <p class="photography" id="text">See more on <a href="https://www.instagram.com/connorsdailypic/" target="_blank" style="font-weight: bold; color: black;">Instagram <i class="fas fa-external-link-square-alt"></i></a> </p>
@@ -472,6 +465,22 @@
     
         document.getElementsByClassName('vid').play();
     
+        
+        function showContent() {
+            const popupContent = document.getElementById("popupContent");
+            popupContent.classList.add("active"); 
+            const hideBtn = document.getElementById("hidebtn");
+            hideBtn.style.transform = "scale(1)";
+        }
+
+        function hideContent() {
+            const popupContent = document.getElementById("popupContent");
+            popupContent.classList.remove("active"); 
+            const hideBtn = document.getElementById("hidebtn");
+            hideBtn.style.transform = "scale(0)";
+        }
+
+
 
 
       </script>
