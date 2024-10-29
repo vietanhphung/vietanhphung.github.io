@@ -1,22 +1,3 @@
-/* Table of Contents
-----------------------------------
-
-0- Global CSS
-1- Heading CSS
-2- Button CSS
-3- Header Area CSS
-4- Home Area CSS
-5- About Area CSS
-6- Qualification Area CSS 
-7- Services Area CSS
-8- Portfolio Area CSS
-9- Testimonials Area CSS
-10- Blog Area CSS
-11- Contact Area CSS
-12- Footer Area CSS
-13- Scroll-Top Area CSS
-
-*/
 
 
 /*--------------------- 0- Global CSS (Start) ---------------------*/
@@ -92,9 +73,11 @@ section {
 @media (max-width: 768px) {
     .swiper-container {
         overflow: hidden;
-        width: 100%; 
+        width: 100vw; 
     }
-    
+    html, body {
+        overflow-x: hidden;
+    }
     .swiper-pagination {
         width: 100%;
         display: flex;
@@ -106,6 +89,8 @@ section {
     .swiper-slide {
         width: 100%;
         box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
 }
 
