@@ -89,16 +89,25 @@ section {
     background: var(--navy);
 }
 
-/* Center pagination bullets on mobile devices */
 @media (max-width: 768px) {
+    .swiper-container {
+        overflow: hidden;
+        width: 100%; 
+    }
+    
     .swiper-pagination {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden; 
+    }
+
+    .swiper-slide {
+        width: 100%;
+        box-sizing: border-box;
     }
 }
-
 
 /*--------------------- 0- Global CSS (End) ---------------------*/
 
