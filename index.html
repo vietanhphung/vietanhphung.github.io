@@ -100,11 +100,11 @@
             <button id="hidebtn" onclick="hideContent()"><i class="fas fa-times" style="color: white; font-size: 3rem;"></i></button>
 
             <div class="box-container">  
-                <div class="portfolio-item image project" onclick="showContent()" style="cursor: pointer;">
+                <div class="portfolio-item image project" onclick="showContent(3)" style="cursor: pointer;">
                     
                     <img src="assets/images/Portfolio/project3.gif" alt="Portfolio-Image" />
                    
-                        <div class="content" id="popupContent" >
+                        <div class="content" id="project3" >
                             <h4>🎲 Project Caerus</h4>
                             <p>End-to-end Interactive LMIA Distribution Map</p>
                             <ul>
@@ -121,9 +121,9 @@
                 </div>
               
     
-                <div class="portfolio-item image project" onclick="showContent()" style="cursor: pointer;">
+                <div class="portfolio-item image project" onclick="showContent(2)" style="cursor: pointer;">
                     <img src="assets/images/Portfolio/project2.jpg" alt="Portfolio-Image" />
-                    <div class="content">
+                    <div class="content" id="project2">
                         <h4>🔱 Project Icarus</h4>
                         <p>Automated Analytic Pipeline System for Air Crash Investigation on Cloud Service</p>
                         <ul>
@@ -136,9 +136,9 @@
                     </div>
                 </div>
     
-                <div class="portfolio-item image project" onclick="showContent()" style="cursor: pointer;">
+                <div class="portfolio-item image project" onclick="showContent(1)" style="cursor: pointer;">
                     <img src="assets/images/Portfolio/project1.gif" alt="Portfolio-Image" />
-                    <div class="content">
+                    <div class="content" id="project1">
                         <h4>🌅 Project Sunrise</h4>
                         <p>Fully Responsive Front End Restaurant Website</p>
                         <ul>
@@ -465,16 +465,17 @@
     
         document.getElementsByClassName('vid').play();
     
-        
-        function showContent() {
-            const popupContent = document.getElementById("popupContent");
+        var n;
+        function showContent(num) {
+            n=num;
+            const popupContent = document.getElementById("project" + num.toString());
             popupContent.classList.add("active"); 
             const hideBtn = document.getElementById("hidebtn");
             hideBtn.style.transform = "scale(1)";
         }
 
         function hideContent() {
-            const popupContent = document.getElementById("popupContent");
+            const popupContent = document.getElementById("project" + n.toString());
             popupContent.classList.remove("active"); 
             const hideBtn = document.getElementById("hidebtn");
             hideBtn.style.transform = "scale(0)";
