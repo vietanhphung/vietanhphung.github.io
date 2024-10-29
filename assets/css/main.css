@@ -197,7 +197,7 @@ header{
        -moz-transition: all 0.5s linear;
          -o-transition: all 0.5s linear;
             transition: all 0.5s linear;
-    z-index: 999;
+    z-index: 8;
 }
 
 header.sticky{
@@ -799,6 +799,7 @@ header #menu-btn:hover{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    z-index: -1;
 }
 
 .portfolio-item .photography {
@@ -819,7 +820,7 @@ header #menu-btn:hover{
     justify-content: center;
     align-items: center;
     transform: scale(0); 
-    z-index: 998;
+    z-index: 8;
     flex-direction: column;
     padding: 2rem;
     padding: 10%;
@@ -835,13 +836,14 @@ header #menu-btn:hover{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    z-index: 999;
+    z-index: 10;
     transform: scale(0);
 }
 
 .portfolio-item .content.active {
     transform: scale(1); 
     opacity: 1; 
+    z-index: 9;
 }
 
 
@@ -1033,7 +1035,7 @@ footer .content p span{
     -moz-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;
-    z-index: 995;
+    z-index: 9;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
