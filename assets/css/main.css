@@ -623,15 +623,15 @@ header #menu-btn:hover{
 }
 
  .skill-item.item1 .box:nth-child(2) .progress-bar span{
-    width:90%;
+    width:65%;
 }
 
  .skill-item.item1 .box:nth-child(3) .progress-bar span{
-    width:85%;
+    width:80%;
 }
 
 .skill-item.item2 .box:nth-child(1) .progress-bar span{
-    width:75%;
+    width:65%;
 }
 
  .skill-item.item2 .box:nth-child(2) .progress-bar span{
