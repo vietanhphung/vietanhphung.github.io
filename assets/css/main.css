@@ -623,11 +623,11 @@ header #menu-btn:hover{
 }
 
  .skill-item.item1 .box:nth-child(2) .progress-bar span{
-    width:65%;
+    width:80%;
 }
 
  .skill-item.item1 .box:nth-child(3) .progress-bar span{
-    width:80%;
+    width:65%;
 }
 
 .skill-item.item2 .box:nth-child(1) .progress-bar span{
