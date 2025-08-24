@@ -54,7 +54,7 @@
             <div class="content">
                 <div class="text">
                     <h1>Viet Anh Phung</h1>
-                    <h2>Data Engineer | Software Engineer | Photographer </h2>
+                    <h2>Software Engineer | Photographer </h2>
                     <p ><span class="typing-text"></span></p>
                     <br><br>
                     <div id="homecontact">
@@ -105,6 +105,24 @@
 
             <div class="box-container">
 
+                <div class="portfolio-item image project" onclick="showContent(7)" style="cursor: pointer;">
+
+                    <img src="assets/images/Portfolio/project7.gif" alt="Portfolio-Image" />
+
+                    <div class="content" id="project7" >
+                        <h4>Secretive Realtime Monitoring System</h4>
+                        <p> An Automated Monitoring Sytem that features near realtime data retrieval and big data analysis 
+                            </br>
+                        </p>
+                        <ul>
+                            <li>Role: Backend Developer</li>
+                            <li>Skills and Technologies: FastAPI, Flink, Airflow, Kafka, Redis, Elastic Search, Docker, PostgreSQL, AWS S3</li>
+                            <li>NDA signed for other details</li>
+                        </ul>
+                        <a  href="https://exalate.com/" target="_blank">More about Exalate<i class="fas fa-external-link-square-alt"></i></a>
+                    </div>
+                </div>
+
                 <div class="portfolio-item image project" onclick="showContent(6)" style="cursor: pointer;">
 
                     <img src="assets/images/Portfolio/project6.gif" alt="Portfolio-Image" />
@@ -127,11 +145,12 @@
                     <img src="assets/images/Portfolio/project5.png" alt="Portfolio-Image" />
                    
                         <div class="content" id="project5" >
-                            <h4>Skill4skill - Under development</h4>
+                            <h4>Skill4skill</h4>
                             <p>a platform dedicated to connecting people in Canada who are eager to exchange skills and services within their communities </p>
                             <ul>
                                 <li>Role: Backend Developer Intern</li>
                                 <li>Skills and Technologies: Python, MySQL, Linux Server, Flask.</li>
+                                <li>Contributions: Design Database and Backend system for MVP version</li>
                             </ul>
                             <a  href="https://www.skilltopia.ca" target="_blank">Website<i class="fas fa-external-link-square-alt"></i></a>
                         </div>
@@ -143,13 +162,14 @@
                    
                         <div class="content" id="project3" >
                             <h4>🎲 Project Caerus</h4>
-                            <p>End-to-end Interactive LMIA Distribution Map</p>
+                            <p>End-to-end Interactive LMIA Distribution Map - Deprecated: due to the discontinuation of the LMIA dataset in 2025</p>
                             <ul>
                                 <li>Used collected data to transform and update geographical coordinate data with Google Maps API to create an interactive map of Canada featuring the distribution trends of LMIA results.</li>
                                 <li>Automated data collection from canada.ca Rest API, handled, transformed, formatted, and uploaded to MySQL remote server, followed Agile methodologies, closely monitored by a mentor.</li>
                                 <li>Implemented dynamic query filter features to improve data analysis and simplified Bash commands using Make.</li>
                                 <li>Set up a reverse proxy as a security feature to hide the IP address of the backend server.</li>
                                 <li>Skills and Technologies: Python, MySQL, SSH, Docker, Plotly, Pandas, Ubuntu, Linux Server, Nginx, Flask.</li>
+                                <li>Limitations: Developed without a Client side redering hence interaction lag</li>
                             </ul>
                             
                             <a href="https://github.com/vietanhphung/lmiaMap" target="_blank">Github <i class="fas fa-external-link-square-alt"></i></a>
@@ -177,7 +197,7 @@
                     <img src="assets/images/Portfolio/project1.gif" alt="Portfolio-Image" />
                     <div class="content" id="project1">
                         <h4>🌅 Project Sunrise</h4>
-                        <p>Fully Responsive Front End Restaurant Website</p>
+                        <p>Fully Responsive Front End Restaurant Website - Deprecated</p>
                         <ul>
                             <li>Fully responsive with animation and effects.</li>
                             <li>Skills and Technologies: HTML, CSS, JavaScript, ReactJS, React Hooks, and other libraries.</li>
@@ -299,7 +319,6 @@
                 <div class="about-info">
 
                     <div class="info">
-                        <h4>Data Engineer: <span>100%</span></h4>
                         <h4>Software Engineer: <span>definitely!</span></h4>
                         <h4>Freelance Photographer: <span>passionately</span></h4>
                         <!--<a href="assets/resume.pdf" class="btn" download>Resume<i class="fas fa-download"></i></a>-->
@@ -339,15 +358,15 @@
             <div class="heading">
                 <h2>My <span>skills</span></h2>
             </div>
-    
+             <!--adjust progress bar in main.css-->
             <div class="skills">
                 <div class="skill-item item1">
                     <div class="box">
-                        <h3>Python, Java, Groovy and libraries<span> 95% </span> </h3>
+                        <h3>Python, Java, Groovy and their frameworks & libraries<span> 95% </span> </h3>
                         <div class="progress-bar"> <span></span> </div>
                     </div>
                     <div class="box">
-                        <h3>SQL<span> 80% </span> </h3>
+                        <h3>SQL, PostgreSQL, Elastic Search<span> 85% </span> </h3>
                         <div class="progress-bar"> <span></span> </div>
                     </div>
                     <div class="box">
@@ -358,11 +377,11 @@
     
                 <div class="skill-item item2">
                     <div class="box">
-                        <h3>Terrafrom, Airflow, Docker, CI/CD<span> 65% </span> </h3>
+                        <h3>System Design<span> 65% </span> </h3>
                         <div class="progress-bar"> <span></span> </div>
                     </div>
                     <div class="box">
-                        <h3>ReactJS, JavaScripts<span> 65% </span> </h3>
+                        <h3>Airflow, Docker, CI/CD<span> 65% </span> </h3>
                         <div class="progress-bar"> <span></span> </div>
                     </div>
                     <div class="box">
